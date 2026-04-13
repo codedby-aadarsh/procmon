@@ -9,10 +9,10 @@
 
 int main(void)
 {
-    printf("%-8s %-39s %-6s %8s\n", "PID", "Name", "State", "Mem(kB)");
     while (1)
     {   system("clear");
         fflush(stdout);
+	printf("%-8s %-39s %-6s %8s\n", "PID", "Name", "State", "Mem(kB)");
         DIR *d = opendir("/proc");
     	if (!d) return -1;
     	struct dirent *entry;
